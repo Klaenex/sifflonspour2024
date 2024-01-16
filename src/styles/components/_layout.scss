@@ -1,6 +1,8 @@
+body {
+  font: $font-r;
+}
+
 .logo {
-  height: 150px;
-  width: 250px;
   overflow: hidden;
   span {
     display: inline-block;
@@ -8,5 +10,35 @@
   }
   img {
     max-width: 250px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  list-style: none;
+  &--link {
+    display: none;
+  }
+}
+
+.content {
+}
+
+.title {
+  font: $font-sb;
+  color: $c-green;
+  margin: 0;
+  &--big {
+    font: $font-big;
+    font-size: 1.953rem;
+    color: $c-grey;
+    @include sm {
+      font: $font-big;
+    }
   }
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 const Content = () => {
   return (
-    <section>
-      <h2>Sifflons ensemble pour 2024!</h2>
+    <section className="content">
+      <h2 className="title title--big">Sifflons ensemble pour 2024!</h2>
       <p>
         En tant qu'association dédiée à l'éducation et l'animation en milieu
         populaire, nous sommes confrontés à divers défis. Du financement
@@ -18,7 +18,7 @@ const Content = () => {
         défendons pour cette année 2024 :
       </p>
 
-      <h3 className="title--list">
+      <h3 className="title">
         Soutenir et valoriser le travail des associations de proximité
       </h3>
       <ul className="list">
@@ -31,7 +31,7 @@ const Content = () => {
           formation et d'animation.
         </li>
       </ul>
-      <h3 className="title--list">
+      <h3 className="title">
         Entretenir des liens et créer des lieux de rencontres
       </h3>
       <ul className="list">
@@ -44,7 +44,7 @@ const Content = () => {
           voix citoyennes du milieu populaire.
         </li>
       </ul>
-      <h3 className="title--list">
+      <h3 className="title">
         Faciliter l’accès aux droits et mettre en place des accueils de
         proximités
       </h3>
@@ -61,7 +61,7 @@ const Content = () => {
           – Rendre l’accès au numérique pour toutes et tous.
         </li>
       </ul>
-      <h3 className="title--list">
+      <h3 className="title">
         Oser siffler et écoutons les réalités des citoyennes et citoyennes
       </h3>
       <ul className="list">
@@ -78,7 +78,7 @@ const Content = () => {
           entre les citoyens et les citoyennes.
         </li>
       </ul>
-      <h3 className="title--list">
+      <h3 className="title">
         PARTAGER LES SAVOIRS … ET PARTAGEONS LES SAVOIRS en milieu populaire
         avec le <a href="https://sefop.org/">SEFoP</a>
       </h3>

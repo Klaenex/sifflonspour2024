@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import BurgerMenu from "./BurgerMenu";
+import NavLink from "./NavLink";
 
 const Header = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpenMenu(!setIsOpenMenu);
+  };
   return (
     <header>
       <nav>
@@ -11,35 +18,8 @@ const Header = () => {
             alt="Logo SEFoP"
           />
         </h1>
-        <div className="burger">
-          <span></span>
-        </div>
-        <ul>
-          <li>
-            <a href="../Presentation/">Présentation</a>
-          </li>
-          <li>
-            <a href="../education-permanente/">
-              Éducation Permanente & Cohésion Sociale
-            </a>
-            <ul>
-              <li>
-                <a href="../education-permanente/animations">Nos animations</a>
-              </li>
-              <li>
-                <a href="../education-permanente/formations">Nos formations</a>
-              </li>
-              <li>
-                <a href="../education-permanente/outils">
-                  Nos outils pédagogiques
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="../contact/">Contact</a>
-          </li>
-        </ul>
+        <BurgerMenu onToggle={toggleMenu} />
+        <NavLink isOpenMenu={isOpenMenu} />
       </nav>
     </header>
   );
