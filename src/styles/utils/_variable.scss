@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+$c-green: #829d19;
+$c-grey: #2b2b2b;
+$font-r: 400 16px/1.5 "Raleway", sans-serif;
+$font-sb: 600 16px/1.5 "Raleway", sans-serif;
+$font-b: 700 16px/1.5 "Raleway", sans-serif;
+$font-blk: 900 16px/1.5 "Raleway", sans-serif;
+
+$screen-sm: 600px;
+$screen-md: 800px;
+$screen-lg: 1000px;
+$screen-xl: 1200px;
+$screen-custom: 1100px;
