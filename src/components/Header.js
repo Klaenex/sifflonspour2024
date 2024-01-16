@@ -3,10 +3,10 @@ import BurgerMenu from "./BurgerMenu";
 import NavLink from "./NavLink";
 
 const Header = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpenMenu(!setIsOpenMenu);
+    setIsMenuOpen(!isMenuOpen);
   };
   return (
     <header>
@@ -18,8 +18,8 @@ const Header = () => {
             alt="Logo SEFoP"
           />
         </h1>
-        <BurgerMenu onToggle={toggleMenu} />
-        <NavLink isOpenMenu={isOpenMenu} />
+        <BurgerMenu isOpen={isMenuOpen} onToggle={toggleMenu} />
+        <NavLink isMenuOpen={isMenuOpen} />
       </nav>
     </header>
   );

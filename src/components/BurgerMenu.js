@@ -1,14 +1,7 @@
-import React from "react";
-import { useState } from "react";
-
-const BurgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+const BurgerMenu = ({ isOpen, onToggle }) => {
   const burgerClass = isOpen ? "open" : "closed";
   return (
-    <div className="burger" onClick={toggleMenu}>
+    <div className="burger" onClick={onToggle}>
       <span className={"top top--" + burgerClass}></span>
       <span className={"middle middle--" + burgerClass}></span>
       <span className={"bottom bottom--" + burgerClass}></span>
