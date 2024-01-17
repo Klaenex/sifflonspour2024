@@ -12,10 +12,9 @@ const Header = () => {
     <header>
       <nav>
         <h1 className="logo">
-          <span>SEFoP</span>
           <img
             src={process.env.PUBLIC_URL + "/img/logo_sefop.svg"}
-            alt="Logo SEFoP"
+            alt="SEFoP"
           />
         </h1>
         <BurgerMenu isOpen={isMenuOpen} onToggle={toggleMenu} />
