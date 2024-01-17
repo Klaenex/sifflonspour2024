@@ -10,9 +10,16 @@ const NavLink = ({ isMenuOpen }) => {
         <li>
           <a href="../Presentation/">Présentation</a>
         </li>
-        <li>
+        <li className="dropdown">
           <a href="../education-permanente/">
-            Éducation Permanente & Cohésion Sociale
+            Éducation Permanente
+            <span>
+              <img
+                className="arrowdown"
+                src={process.env.PUBLIC_URL + "/img/down.svg"}
+                alt=""
+              />
+            </span>
           </a>
           <ul className="list list--link">
             <li>

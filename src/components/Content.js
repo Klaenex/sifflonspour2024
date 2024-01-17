@@ -78,10 +78,13 @@ const Content = () => {
           entre les citoyens et les citoyennes.
         </li>
       </ul>
-      <h3 className="title">
+      <h3 className="title title--last">
         PARTAGER LES SAVOIRS … ET PARTAGEONS LES SAVOIRS en milieu populaire
         avec le <a href="https://sefop.org/">SEFoP</a>
       </h3>
+      <div className="wrapper--img">
+        <img src={process.env.PUBLIC_URL + "/img/IMG_4406.png"} alt="SEFoP" />
+      </div>
     </section>
   );
 };
