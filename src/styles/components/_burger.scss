@@ -54,7 +54,6 @@
     height: unset;
   }
   &--nav__closed {
-    position: fixed;
     top: 0;
     transform: translateX(100vw);
 
@@ -62,6 +61,7 @@
       position: unset;
       left: unset;
       top: unset;
+      transform: unset;
     }
   }
 
