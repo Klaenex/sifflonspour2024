@@ -1,6 +1,11 @@
 body {
   font: $font-r;
 }
+a {
+  font: $font-r;
+  color: black;
+  text-decoration: none;
+}
 
 .logo {
   overflow: hidden;
@@ -22,7 +27,13 @@ nav {
 .list {
   list-style: none;
   &--link {
-    display: none;
+    // display: none;
+    margin: 0;
+    padding: 16px;
+    font-size: 1.25rem;
+    ul {
+      padding: 8px;
+    }
   }
 }
 
