@@ -10,8 +10,11 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column;
+  width: 50%;
+
   img {
     width: 50%;
+    max-width: 240px;
     padding: 16px;
   }
 }
@@ -21,23 +24,27 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 2rem;
+  max-width: 1200px;
 }
 .list {
   list-style: none;
   padding-left: 0.5rem;
   &--item {
     margin: 0.5rem 0;
+    list-style-type: disc;
   }
   &--link {
     a {
       font: $font-r;
-      color: black;
+      color: $c-grey;
       text-decoration: none;
     }
     margin: 0;
     padding: 16px;
     font-size: 1.25rem;
+
     ul {
       padding: 0 8px;
     }
@@ -45,6 +52,22 @@ nav {
       display: flex;
       gap: 1rem;
       text-wrap: nowrap;
+      & li {
+        width: fit-content;
+        &:hover::after {
+          width: 100%;
+        }
+      }
+      & li::after {
+        content: "";
+        position: relative;
+        top: -3px;
+        display: block;
+        background-color: $c-grey;
+        width: 0%;
+        height: 3px;
+        transition: width 0.3s ease;
+      }
       ul {
         display: flex;
         flex-flow: column nowrap;
