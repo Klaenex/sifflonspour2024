@@ -17,10 +17,12 @@ const Header = () => {
     <header>
       <nav>
         <h1 className="logo">
-          <img
-            src={process.env.PUBLIC_URL + "/img/logo_sefop.svg"}
-            alt="SEFoP"
-          />
+          <a href="www.sefop.org">
+            <img
+              src={process.env.PUBLIC_URL + "/img/logo_sefop.svg"}
+              alt="SEFoP"
+            />
+          </a>
         </h1>
         <BurgerMenu isOpen={isMenuOpen} onToggle={toggleMenu} />
         <NavLink isMenuOpen={isMenuOpen} />
